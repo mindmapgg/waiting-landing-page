@@ -28,7 +28,7 @@
 
     var isTouchDevice = (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
     if (isTouchDevice) {
-        $('body').addClass('is-touchable');
+        // $('body').addClass('is-touchable');
     }
 
     /* ===================================
@@ -2950,12 +2950,12 @@
             $('.magic-cursor').mouseenter(function (e) {
                 TweenMax.to('#ball-cursor', 0.3, {
                     borderWidth: '2px',
-                    scale: 1,
+                    scale: 0.5,
                 });
                 TweenMax.to('#ball-cursor-loader', 0.2, {
-                    borderWidth: '2px',
-                    top: 2,
-                    left: 2
+                    borderWidth: '1px',
+                    top: 1,
+                    left: 1
                 });
                 $('.magic-cursor-wrapper').addClass('sliderhover');
                 if ($(this).hasClass('magic-cursor-vertical')) {
@@ -2966,13 +2966,13 @@
         if (typeof TweenMax !== 'undefined' && typeof TweenMax !== null) {
             $('.magic-cursor').mouseleave(function (e) {
                 TweenMax.to('#ball-cursor', 0.3, {
-                    borderWidth: '2px',
-                    scale: 1,
+                    borderWidth: '1px',
+                    scale: 0.5,
                     borderColor: 'transparent',
                     opacity: 1
                 });
                 TweenMax.to('#ball-cursor-loader', 0.2, {
-                    borderWidth: '2px',
+                    borderWidth: '1px',
                     top: 0,
                     left: 0
                 });
