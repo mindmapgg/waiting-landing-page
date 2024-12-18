@@ -15764,6 +15764,34 @@ canvas {
   margin-bottom: 0;
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.elements-social li {
+  display: flex;
+  align-items: center; /* Vertically align icon and text */
+}
+.elements-social a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spacing between icon and text */
+  text-decoration: none; /* Removes underline */
+}
+
+.elements-social i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Ensure icons have consistent size */
+}
+
+.elements-social span {
+  line-height: 1; /* Removes any extra line height */
+  font-size: 16px; /* Consistent font size */
 }
 .elements-social ul li {
   display: inline-block;
@@ -20573,8 +20601,11 @@ footer .footer-navbar .nav-item:last-child a {
     margin-top: auto; /* Push content to bottom */
   }
 
-  .elements-social ul {
-    gap: 12px; /* Add spacing between social media items */
+  .elements-social i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px; /* Ensure icons have consistent size */
   }
 }
 
