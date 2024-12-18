@@ -87,6 +87,7 @@ footer {
 }
 footer .container {
   height: 100%;
+  margin: 0% !important;
 }
 section {
   padding-top: 110px;
@@ -20481,8 +20482,8 @@ canvas {
    17. Footer
 ====================================== */
 footer {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  /* padding-top: 110px;
+  padding-bottom: 110px; */
 }
 footer.half-footer {
   padding-top: 70px;
